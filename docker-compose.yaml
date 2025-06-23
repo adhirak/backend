@@ -2,11 +2,11 @@ version: '3.8'
 
 services:
   backend:
-    image: yourdockerhubusername/backend
+    image: adhirak/backend
     ports:
       - "8080:8080"
 
   frontend:
-    image: yourdockerhubusername/frontend
+    image: adhirak/frontend
     ports:
       - "5173:80"
