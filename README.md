@@ -72,11 +72,20 @@ The application initializes with sample data:
 - Course IDs must follow pattern: 2-4 letters + 3 digits (e.g., CS101)
 - Prerequisites must exist before creating dependent courses
 - Cannot delete courses that are prerequisites for other courses
-- Cannot delete courses with active instances
+- Cannot delete courses with active 🐳 Docker Setup
+
+## Folder Structure
+
+project/
+├── backend/              # Spring Boot backend with Dockerfile
+├── frontend/             # React frontend with Dockerfile
+├── docker-compose.yaml   # Root-level Docker orchestrator
 - Course instances must be unique per course/year/semester combination
 
 ## Error Handling
 - Comprehensive exception handling with appropriate HTTP status codes
+
+
 - Validation error messages
 - Custom exceptions for business logic violations
 
